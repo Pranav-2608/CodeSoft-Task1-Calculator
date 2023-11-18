@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .button:hover{
+            background-color: crimson;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex justify-center items-center h-[100vh] flex-col">
+    <h1 class="text-[48px] text-center">CALCULATOR</h1>
+        <div class="flex flex-col items-center p-8 border-2 border-black gap-12 bg-blue-600">
+           <div class="w-full border-2 border-black h-10 bg-blue-400" id="result">
+                0
+           </div>
+           <div class="flex gap-2 items-center  w-full ">
+            <button class="border border-black rounded-md p-2 w-10 bg-blue-300 button" id="one" >1</button>
+            <button class="border border-black rounded-md p-2 w-10 bg-blue-300 button" id="two">2</button>
+            <button class="border border-black rounded-md p-2 w-10 bg-blue-300 button" id="three" >3</button>
+            <button class="border border-black rounded-md p-2 w-10 bg-blue-300 button" id="plus" >+</button>
+            <button class="border border-black rounded-md p-2 w-10 bg-blue-300 button" id="minus">-</button>
+           </div>
+           <div class="flex gap-2 items-center  w-full">
+            <button class="border border-black rounded-md p-2 w-10 bg-blue-300 button" id="four" >4</button>
+            <button class="border border-black rounded-md p-2 w-10 bg-blue-300 button" id="five">5</button>
+            <button class="border border-black rounded-md p-2 w-10 bg-blue-300 button" id="six" >6</button>
+            <button class="border border-black rounded-md p-2 w-10 bg-blue-300 button" id="multiply">*</button>
+            <button class="border border-black rounded-md p-2 w-10 bg-blue-300 button" id="divide">/</button>
+           </div>
+           <div class="flex gap-2 items-center  w-full">
+            <button class="border border-black rounded-md p-2 w-10 bg-blue-300 button" id="seven" >7</button>
+            <button class="border border-black rounded-md p-2 w-10 bg-blue-300 button" id="eight">8</button>
+            <button class="border border-black rounded-md p-2 w-10 bg-blue-300 button" id="nine" >9</button>
+            <button class="border border-black rounded-md p-2 w-10 bg-blue-300 button" id="equal" >=</button>
+            <button class="border border-black rounded-md p-2 w-10 bg-blue-300 button" id="clear" >AC</button>
+           </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
